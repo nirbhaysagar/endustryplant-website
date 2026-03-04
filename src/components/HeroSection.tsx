@@ -33,15 +33,15 @@ const HeroSection = () => {
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
-          className="text-[10vw] md:text-[8vw] font-display font-black leading-[0.85] tracking-tight text-center uppercase text-white max-w-5xl"
+          className="text-[9vw] md:text-[7vw] font-display font-black leading-[0.95] tracking-tight text-center text-white max-w-5xl"
         >
-          We Engineer <br /> Digital Growth Systems
+          We engineer <br /> digital growth systems.
         </motion.h1>
         <motion.p
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
-          className="mt-6 text-[12px] md:text-base tracking-[0.2em] text-white font-black max-w-2xl text-center font-technical uppercase leading-relaxed"
+          className="mt-6 text-[14px] md:text-lg text-white/80 font-medium max-w-2xl text-center font-body leading-relaxed"
         >
           Endustry Plant builds high-performance websites and scalable SaaS products that turn attention into revenue, and ideas into infrastructure.
         </motion.p>

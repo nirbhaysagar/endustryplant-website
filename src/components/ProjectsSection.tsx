@@ -14,6 +14,7 @@ const projects = [
     category: "AI Infrastructure",
     description: "One timeline, every agent execution. Records every tool call, state change, and LLM decision.",
     bgColor: "bg-[#1A1A1A]",
+    url: "https://www.theagenttrace.com/",
   },
   {
     image: project2,
@@ -21,6 +22,7 @@ const projects = [
     category: "Travel Platform",
     description: "All-in-one Travel Booking. Explore the world's most breathtaking destinations.",
     bgColor: "bg-[#2A2A2A]",
+    url: "https://triptrekholiday.com/",
   },
   {
     image: project3,
@@ -28,6 +30,7 @@ const projects = [
     category: "HealthTech SaaS",
     description: "A sophisticated health management dashboard for medical professionals.",
     bgColor: "bg-[#333333]",
+    url: "#",
   },
 ];
 
@@ -91,17 +94,24 @@ const ProjectsSection = () => {
                 <p className="text-white text-base md:text-lg max-w-sm mb-10 leading-relaxed font-body">
                   {project.description}
                 </p>
-                <div className="inline-flex items-center gap-4 group cursor-pointer">
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-4 group cursor-pointer"
+                >
                   <span className="w-12 h-[1px] bg-white group-hover:w-20 group-hover:bg-primary transition-all duration-500"></span>
                   <span className="text-[10px] uppercase font-black tracking-widest text-white group-hover:text-primary transition-colors font-technical">View Project</span>
-                </div>
+                </a>
               </div>
               <div className="order-1 md:order-2 overflow-hidden rounded-xl shadow-2xl transform md:rotate-2 hover:rotate-0 transition-transform duration-700">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover aspect-[4/3] scale-110 hover:scale-100 transition-transform duration-1000"
-                />
+                <a href={project.url} target="_blank" rel="noopener noreferrer">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover aspect-[4/3] scale-110 hover:scale-100 transition-transform duration-1000"
+                  />
+                </a>
               </div>
             </div>
           </div>
