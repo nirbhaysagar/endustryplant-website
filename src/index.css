@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Inter+Tight:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&family=Inter+Tight:wght@400;500;600;700;800;900&family=Inconsolata:wght@200..900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -46,10 +46,10 @@
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
 
-    --font-display: 'Google Sans', 'Outfit', 'Syne', sans-serif;
-    --font-technical: 'Cascadia Mono', 'Google Sans', 'Outfit', 'Inter Tight', sans-serif;
-    --font-body: 'Google Sans', 'Outfit', 'Inter', sans-serif;
-    --font-mono: 'Cascadia Mono', monospace;
+    --font-display: 'Inter Tight', 'Google Sans', 'Outfit', 'Syne', sans-serif;
+    --font-technical: 'Inconsolata', 'Cascadia Mono', monospace;
+    --font-body: 'Inconsolata', monospace;
+    --font-mono: 'Inconsolata', monospace;
   }
 
   .dark {
@@ -83,6 +83,8 @@
 
   body {
     @apply bg-background text-foreground font-body antialiased;
+    line-height: 1.6; 
+    letter-spacing: 0.02em; /* More breathable body text */
   }
 
   h1,
@@ -92,6 +94,12 @@
   h5,
   h6 {
     font-family: var(--font-display);
+    line-height: 1.1;
+    letter-spacing: -0.02em; 
+  }
+
+  p {
+    margin-bottom: 1.5rem;
   }
 }
 

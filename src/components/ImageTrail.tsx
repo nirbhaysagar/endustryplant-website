@@ -1,19 +1,19 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, ReactNode } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-interface TrailImage {
+interface TrailSymbol {
   id: number;
   x: number;
   y: number;
-  src: string;
+  content: ReactNode;
 }
 
-interface ImageTrailProps {
-  images: string[];
+interface SymbolTrailProps {
+  symbols: ReactNode[];
 }
 
-const ImageTrail: React.FC<ImageTrailProps> = ({ images }) => {
-  const [trail, setTrail] = useState<TrailImage[]>([]);
+const ImageTrail: React.FC<SymbolTrailProps> = ({ symbols }) => {
+  const [trail, setTrail] = useState<TrailSymbol[]>([]);
   const containerRef = useRef<HTMLDivElement>(null);
   const lastPos = useRef({ x: 0, y: 0 });
   const trailCount = useRef(0);
@@ -45,19 +45,19 @@ const ImageTrail: React.FC<ImageTrailProps> = ({ images }) => {
       );
 
       if (distance > 70) {
-        const newImage: TrailImage = {
+        const newSymbol: TrailSymbol = {
           id: trailCount.current++,
           x,
           y,
-          src: images[Math.floor(Math.random() * images.length)],
+          content: symbols[Math.floor(Math.random() * symbols.length)],
         };
 
-        setTrail((prev) => [...prev.slice(-15), newImage]);
+        setTrail((prev) => [...prev.slice(-15), newSymbol]);
         lastPos.current = { x, y };
 
         // Auto-remove image after 0.5 seconds to ensure trail clears faster
         setTimeout(() => {
-          setTrail((prev) => prev.filter((img) => img.id !== newImage.id));
+          setTrail((prev) => prev.filter((item) => item.id !== newSymbol.id));
         }, 500);
       }
     };
@@ -66,29 +66,29 @@ const ImageTrail: React.FC<ImageTrailProps> = ({ images }) => {
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
-  }, [images]);
+  }, [symbols]);
 
   return (
     <div ref={containerRef} className="pointer-events-none absolute inset-0 z-10 overflow-hidden">
       <AnimatePresence>
-        {trail.map((img) => (
-          <motion.img
-            key={img.id}
-            src={img.src}
-            initial={{ opacity: 0, scale: 0.5, rotate: Math.random() * 20 - 10 }}
+        {trail.map((item) => (
+          <motion.div
+            key={item.id}
+            initial={{ opacity: 0, scale: 0.5, rotate: Math.random() * 40 - 20 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.2, transition: { duration: 0.5 } }}
             style={{
               position: "absolute",
-              left: img.x,
-              top: img.y,
+              left: item.x,
+              top: item.y,
               transform: "translate(-50%, -50%)",
-              width: "150px",
-              height: "auto",
               pointerEvents: "none",
             }}
+            className="text-4xl md:text-5xl font-technical font-black text-white/20 select-none whitespace-nowrap"
             transition={{ type: "spring", stiffness: 150, damping: 15 }}
-          />
+          >
+            {item.content}
+          </motion.div>
         ))}
       </AnimatePresence>
     </div>

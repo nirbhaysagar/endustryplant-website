@@ -57,12 +57,12 @@ const StickyCTASection = () => {
                     initial={{ y: 20, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ delay: 0.2 }}
-                    className="text-[10px] md:text-sm font-black uppercase tracking-[0.5em] text-white mb-6 font-technical max-w-lg leading-relaxed"
+                    className="text-[10px] md:text-sm font-black tracking-[0.5em] text-white mb-6 font-display max-w-lg leading-relaxed lowercase"
                 >
-                    If you’re serious about building something scalable, intelligent, and future-ready — let’s plant it properly.
+                    if you’re serious about building a real product — not just another project — we should talk. let’s build something that actually works.
                 </motion.p>
-                <h2 className="text-5xl md:text-8xl lg:text-9xl font-display font-black uppercase leading-[0.9] tracking-tighter text-white">
-                    Let's Build <br /> Something <br /> That Grows
+                <h2 className="text-5xl md:text-8xl lg:text-9xl font-display font-black leading-[0.9] tracking-tighter text-white lowercase">
+                    built to <br /> scale <br /> right
                 </h2>
             </div>
 
@@ -76,24 +76,24 @@ const StickyCTASection = () => {
                     <div className="absolute top-[15%] left-[10%] w-48 md:w-64 rotate-[-5deg] shadow-2xl bg-white p-2 md:p-4 pb-8 md:pb-12 pointer-events-auto hover:scale-105 transition-transform rounded-sm">
                         <img src={project1} alt="Project 1" className="w-full grayscale hover:grayscale-0 transition-all duration-500 rounded-sm" />
                         <div className="mt-4">
-                            <p className="text-[10px] font-black uppercase tracking-widest text-black font-technical">AgentTrace</p>
-                            <p className="text-[8px] text-black uppercase font-black">View Case Study →</p>
+                            <p className="text-[10px] font-black tracking-widest text-black font-technical">agenttrace</p>
+                            <p className="text-[8px] text-black font-black">view case study →</p>
                         </div>
                     </div>
 
                     <div className="absolute bottom-[20%] right-[10%] w-56 md:w-80 rotate-[3deg] shadow-2xl bg-primary p-2 md:p-4 pb-8 md:pb-12 pointer-events-auto hover:scale-105 transition-transform rounded-sm">
                         <img src={project2} alt="Project 2" className="w-full rounded-sm" />
                         <div className="mt-4 text-white">
-                            <p className="text-[10px] font-black uppercase tracking-widest font-technical">Trip Trek Holiday</p>
-                            <p className="text-[8px] text-white uppercase font-black">View Case Study →</p>
+                            <p className="text-[10px] font-black tracking-widest font-technical">trip trek holiday</p>
+                            <p className="text-[8px] text-white font-black">view case study →</p>
                         </div>
                     </div>
 
                     <div className="absolute top-[10%] right-[15%] w-40 md:w-56 rotate-[10deg] shadow-2xl bg-white p-2 md:p-4 pb-8 md:pb-12 pointer-events-auto hover:scale-105 transition-transform hidden md:block rounded-sm">
                         <img src={project3} alt="Project 3" className="w-full grayscale hover:grayscale-0 transition-all duration-500 rounded-sm" />
                         <div className="mt-4">
-                            <p className="text-[10px] font-black uppercase tracking-widest text-black font-technical">Intelly</p>
-                            <p className="text-[8px] opacity-40 uppercase font-technical font-bold">View Case Study →</p>
+                            <p className="text-[10px] font-black tracking-widest text-black font-technical">intelly</p>
+                            <p className="text-[8px] opacity-40 font-technical font-bold">view case study →</p>
                         </div>
                     </div>
                 </div>
@@ -101,8 +101,8 @@ const StickyCTASection = () => {
 
             {/* Bottom Floating Badge - Standardized */}
             <div className="absolute bottom-10 right-10 w-24 h-24 bg-primary rounded-full flex items-center justify-center z-30 animate-pulse pointer-events-auto cursor-pointer group border border-white/20 shadow-2xl">
-                <p className="text-white text-[10px] font-black uppercase text-center leading-tight group-hover:scale-110 transition-transform font-technical tracking-widest">
-                    Work<br />Let's
+                <p className="text-white text-[10px] font-black text-center leading-tight group-hover:scale-110 transition-transform font-technical tracking-widest">
+                    lets<br />work
                 </p>
             </div>
         </section>

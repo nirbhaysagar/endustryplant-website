@@ -11,9 +11,9 @@ const FAQPage = () => {
                         initial={{ y: 20, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.8 }}
-                        className="text-[12vw] md:text-[8vw] font-display font-black leading-[0.9] tracking-tighter uppercase mb-8"
+                        className="text-[12vw] md:text-[8vw] font-display font-black leading-[0.9] tracking-tighter mb-8"
                     >
-                        Questions & <br /> Answers.
+                        frequently asked <br /> questions
                     </motion.h1>
                     <motion.p
                         initial={{ y: 20, opacity: 0 }}

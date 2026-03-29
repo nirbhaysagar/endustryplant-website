@@ -44,20 +44,20 @@ const FAQSection = () => {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
-              className="font-display text-sm uppercase tracking-[0.3em] text-primary mb-4"
+              className="font-display text-sm tracking-[0.3em] text-primary mb-4"
             >
-              FAQ
+              faq
             </motion.p>
             <motion.h2
               initial={{ y: 40, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="font-display text-3xl md:text-5xl font-extrabold uppercase leading-tight text-foreground"
+              className="font-display text-3xl md:text-5xl font-extrabold leading-tight text-foreground"
             >
-              What They
+              what they
               <br />
-              Ask
+              ask
             </motion.h2>
           </div>
 
@@ -70,7 +70,7 @@ const FAQSection = () => {
             <Accordion type="single" collapsible className="w-full">
               {faqs.map((faq, index) => (
                 <AccordionItem key={index} value={`item-${index}`} className="border-foreground/10">
-                  <AccordionTrigger className="font-display text-sm md:text-base uppercase tracking-wide text-foreground text-left hover:no-underline py-5">
+                  <AccordionTrigger className="font-display text-sm md:text-base tracking-wide text-foreground text-left hover:no-underline py-5">
                     {faq.question}
                   </AccordionTrigger>
                   <AccordionContent className="font-body text-muted-foreground leading-relaxed pb-5">

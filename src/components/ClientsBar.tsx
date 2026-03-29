@@ -16,7 +16,7 @@ const ClientsBar = () => {
           {clients.map((client) => (
             <span
               key={client}
-              className="font-display text-base md:text-lg font-bold uppercase tracking-widest text-muted-foreground"
+              className="font-display text-base md:text-lg font-bold tracking-widest text-muted-foreground"
             >
               {client}
             </span>
