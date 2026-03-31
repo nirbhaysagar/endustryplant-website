@@ -44,7 +44,7 @@ const DifferenceSection = () => {
               transition={{ duration: 0.6 }}
               className="text-5xl md:text-7xl lg:text-8xl font-display font-black leading-[0.9] tracking-tighter"
             >
-              why endustry plant <br /> is different
+              why agenttrace <br /> is different
             </motion.h2>
           </div>
           <div className="hidden md:block">

@@ -107,7 +107,7 @@ const ServicesSection = () => {
         <div className="mb-10 md:mb-16 border-b border-white/10 pb-4 md:pb-6 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div className="w-2 h-2 bg-primary animate-pulse rounded-full" />
-              <span className="font-technical text-[9px] md:text-[10px] text-white/50 tracking-[0.2em] md:tracking-[0.3em] uppercase">Endustry Plant // Service Matrix</span>
+              <span className="font-technical text-[9px] md:text-[10px] text-white/50 tracking-[0.2em] md:tracking-[0.3em] uppercase">Agenttrace // Service Matrix</span>
             </div>
             <span className="hidden md:block font-technical text-[10px] text-primary tracking-[0.3em] uppercase opacity-70">
               SYS_REV_v3.0.4

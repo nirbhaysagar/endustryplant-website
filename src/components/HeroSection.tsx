@@ -65,10 +65,10 @@ const HeroSection = () => {
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.4 }}
           className="mt-10 flex flex-col md:flex-row gap-6 items-center"
         >
-          <Link to="/contact" className="bg-primary text-white border border-primary px-10 py-4 text-[10px] font-black tracking-[0.3em] font-technical hover:bg-white hover:text-black hover:border-white transition-all duration-300 rounded-full">
+          <Link to="/contact" className="bg-primary text-white border border-primary px-10 py-4 text-xs md:text-sm font-black tracking-[0.3em] font-technical hover:bg-white hover:text-black hover:border-white transition-all duration-300 rounded-full">
             start your project
           </Link>
-          <a href="#process" className="bg-transparent text-white border border-white/20 px-10 py-4 text-[10px] font-black tracking-[0.3em] font-technical hover:bg-white hover:text-black hover:border-white transition-all duration-300 rounded-full">
+          <a href="#process" className="bg-transparent text-white border border-white/20 px-10 py-4 text-xs md:text-sm font-black tracking-[0.3em] font-technical hover:bg-white hover:text-black hover:border-white transition-all duration-300 rounded-full">
             see how we build
           </a>
         </motion.div>
@@ -80,7 +80,7 @@ const HeroSection = () => {
           initial={{ x: -20, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.6 }}
-          className="max-w-[300px] text-[10px] tracking-widest leading-relaxed font-technical font-bold text-white"
+          className="max-w-[300px] text-xs md:text-sm tracking-widest leading-relaxed font-technical font-bold text-white"
         >
           we turn attention into revenue, <br /> and ideas into infrastructure.
         </motion.p>
@@ -94,7 +94,7 @@ const HeroSection = () => {
             ease: [0.16, 1, 0.3, 1],
             delay: 0.8,
           }}
-          className="w-24 h-24 rounded-full border border-white/20 flex items-center justify-center text-[10px] tracking-widest hover:bg-primary hover:border-primary hover:text-white transition-all cursor-pointer font-technical font-bold"
+          className="w-24 h-24 rounded-full border border-white/20 flex items-center justify-center text-xs tracking-widest hover:bg-primary hover:border-primary hover:text-white transition-all cursor-pointer font-technical font-bold"
         >
           scroll
         </motion.div>

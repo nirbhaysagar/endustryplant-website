@@ -115,8 +115,6 @@ const ProjectsSection = () => {
 
     const ctx = gsap.context(() => {
       cards.forEach((card, index) => {
-        if (index === cards.length - 1) return; // Don't pin the last card
-
         ScrollTrigger.create({
           trigger: card,
           start: "top top",

@@ -31,10 +31,10 @@ const ContactPage = () => {
                         >
                             <p className="text-white/40 font-display tracking-widest text-[10px] mb-4">email us</p>
                             <a
-                                href="mailto:endustryplant@gmail.com"
+                                href="mailto:agenttrace@gmail.com"
                                 className="text-2xl md:text-4xl font-display font-black text-white hover:text-primary transition-colors hover:underline decoration-primary underline-offset-8"
                             >
-                                endustryplant@gmail.com
+                                agenttrace@gmail.com
                             </a>
                         </motion.div>
 

@@ -81,7 +81,7 @@ const AIPage = () => {
       scrapedContext = await fetchUrlContext(url.trim());
     }
 
-    const systemPrompt = `You are a Lead Infrastructure Architect and Product Strategist at 'Endustry Plant'. 
+    const systemPrompt = `You are a Lead Infrastructure Architect and Product Strategist at 'Agenttrace'. 
     Using deep reasoning, output a highly technical, multi-faceted product deployment blueprint based on the user's keywords and any provided website context. 
     Format your response EXACTLY as a raw JSON object with this exact schema:
     {
@@ -147,7 +147,7 @@ const AIPage = () => {
 
   const getMarkdownText = () => {
     if (!blueprint) return "";
-    return `# Blueprint: Endustry Plant Forge
+    return `# Blueprint: Agenttrace Forge
 
 ## Executive Summary
 ${blueprint.executive_summary}
@@ -175,7 +175,7 @@ ${blueprint.ui_ux_strategy.features.map(f => `- ${f}`).join('\n')}
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = `Endustry_Blueprint_${new Date().getTime()}.md`;
+    a.download = `Agenttrace_Blueprint_${new Date().getTime()}.md`;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);

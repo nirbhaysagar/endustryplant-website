@@ -40,8 +40,8 @@ const Footer = () => {
             <div className="container mx-auto">
               {/* Branding Only */}
               <div className="text-center pt-8 pb-12">
-                <h2 className="text-[10vw] font-display font-black leading-[0.8] tracking-tighter text-white mb-6">
-                  endustry plant
+                <h2 className="text-[10vw] font-display font-black leading-[0.8] tracking-tighter text-white mb-12">
+                  agenttrace
                 </h2>
                 <p className="text-primary font-technical font-black uppercase text-[10px] md:text-xs tracking-[0.4em] opacity-80 mx-auto max-w-xl">
                   engineering deterministic outcomes // zero-latency systems
@@ -55,7 +55,7 @@ const Footer = () => {
                   <a href="#" className="hover:text-white transition-colors">terms of service</a>
                 </div>
                 <p className="text-[9px] font-display font-black tracking-[0.2em] text-white/30">
-                  © 2024 endustry studio — all rights reserved
+                  © 2024 agenttrace — all rights reserved
                 </p>
               </div>
             </div>
