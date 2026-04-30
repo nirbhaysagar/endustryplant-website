@@ -8,7 +8,7 @@ const protocols = [
     status: "SYSTEMS ONLINE",
     icon: <Server className="w-5 h-5 text-primary" />,
     name: "Core Infrastructure Engine",
-    description: "rapid deployment of scalable saas applications, dashboards, and internal platforms. engineered for real-world stress testing without sacrificing architectural purity.",
+    description: "rapid deployment of scalable saas applications, custom webapps, and internal tools. engineered for real-world stress testing without sacrificing architectural purity.",
     stack: ["React", "PostgreSQL", "Node.js", "Redis"],
     image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=800"
   },
@@ -35,7 +35,7 @@ const protocols = [
     status: "PERFORMANCE NOMINAL",
     icon: <Activity className="w-5 h-5 text-primary" />,
     name: "Conversion Systems",
-    description: "custom experiential landing platforms and e-commerce deployments. moving away from basic templates to engineered digital experiences that dominate attention.",
+    description: "custom experiential websites and high-converting shopify stores. moving away from basic templates to engineered digital experiences that dominate attention.",
     stack: ["Framer Motion", "WebGL", "Tailwind", "Vite"],
     image: "https://images.unsplash.com/photo-1614729939124-032f0b56c9ce?auto=format&fit=crop&q=80&w=800"
   },

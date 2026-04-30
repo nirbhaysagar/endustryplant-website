@@ -56,7 +56,7 @@ const HeroSection = () => {
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
           className="mt-6 text-[14px] md:text-lg text-white/50 font-medium max-w-2xl text-center font-body leading-relaxed lowercase"
         >
-          we are a specialized forge of engineers and product thinkers. we architect high-performance mvps, saas ecosystems, and custom dashboards — optimized for zero-latency and massive scalability.
+          we are a specialized forge of engineers and product thinkers. we build everything from high-performance saas and custom webapps, to high-converting shopify stores, immersive websites, and internal tools — optimized for zero-latency and massive scalability.
         </motion.p>
 
         <motion.div
